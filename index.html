@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>
+            Redirecting to https://datakinds.github.io/...
+        </title>
+    </head>
+    <body>
+        <a id="r" href="https://datakinds.github.io/">Click here if you aren't redirected to your subdomain on https://datakinds.github.io/</a>
+    </body>
+    <script type="text/javascript">
+        window.onload = function() {
+            var p = "https://datakinds.github.io/" + window.location.pathname + window.location.search;
+            document.getElementById("r").href = p;
+            window.location.replace(p);
+        }
+    </script>
+</html>
